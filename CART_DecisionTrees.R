@@ -4,7 +4,7 @@ rm(list=ls(all=TRUE))
 par(mfrow=c(1,1))
 
 #setwd("")
-
+library(RCurl)
 univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth119/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
                 col.names = c('ID', 'age', 'exp', 'inc', 
                               'zip', 'family', 'ccavg', 'edu', 
