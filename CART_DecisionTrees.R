@@ -3,7 +3,9 @@ rm(list=ls(all=TRUE))
 
 par(mfrow=c(1,1))
 
+
 #setwd("")
+install.packages("RCurl")
 library(RCurl)
 univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth119/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
                 col.names = c('ID', 'age', 'exp', 'inc', 
@@ -40,6 +42,7 @@ eval=univ[evalRows,]
 
 rm(univ,evalRows,remainingRows,rows,testRows,trainRows)
 
+install.packages("rpart")
 library(rpart)
 dtCart = rpart(inc ~., data=train, method="anova")    
 plot(dtCart, main="Decision Tree for Income", 
@@ -49,7 +52,7 @@ text(dtCart, use.n=T)
 predCartTrain=predict(dtCart, newdata=train, type="vector")
 predCartTest=predict(dtCart, newdata=test, type="vector")
 predCartEval=predict(dtCart, newdata=eval, type="vector")
-
+install.packages("DMwR")
 library(DMwR)
 regr.eval(train[,"inc"], predCartTrain, train.y = train[,"inc"])
 regr.eval(test[,"inc"], predCartTest, train.y = train[,"inc"])

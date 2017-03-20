@@ -3,3 +3,10 @@ The Bank data set used contains 12 features, 5000 samples with Personal loan as 
 The independent features are
 ID,Age,Experience,Income,ZIP Code,Family,CCAvg,Education,Mortgage,Securities Account,CD Account,Online,CreditCard
 
+Packages used :
+DMwR
+C50
+rpart
+RCurl
+
+

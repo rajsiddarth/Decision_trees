@@ -42,6 +42,7 @@ eval=univ[evalRows,]
 rm(univ,evalRows,remainingRows,rows,testRows,trainRows)
 
 # Decision Trees using C5.0 (For Classification Problem)
+install.packages("C50")
 library(C50)
 
 dtC50= C5.0(loan ~ ., data = train, rules=F)
