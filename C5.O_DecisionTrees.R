@@ -2,6 +2,7 @@
 rm(list=ls(all=TRUE))
 
 #setwd("")
+install.packages("RCurl")
 library(RCurl)
 
 univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth119/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
