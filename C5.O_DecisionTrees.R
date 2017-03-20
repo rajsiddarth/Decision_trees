@@ -2,7 +2,7 @@
 rm(list=ls(all=TRUE))
 
 #setwd("")
-install.packages("RCurl")
+#install.packages("RCurl")
 library(RCurl)
 
 univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth119/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
@@ -42,7 +42,7 @@ eval=univ[evalRows,]
 rm(univ,evalRows,remainingRows,rows,testRows,trainRows)
 
 # Decision Trees using C5.0 (For Classification Problem)
-install.packages("C50")
+#install.packages("C50")
 library(C50)
 
 dtC50= C5.0(loan ~ ., data = train, rules=F)
