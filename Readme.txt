@@ -14,7 +14,7 @@ Securities Account: Does the customer have a securities account with the bank?
 CD Account:Does the customer have a certificate of deposit account with the bank?
 Online : Does the customer use internet banking facilities?
 CreditCard: Does the customer use a credit card issued by the respective bank?
-Personal Loan : Did the customer accept the personal loan offered in the last campaign?
+Personal Loan : Did the customer default on the loan?
 
 Packages used :
 DMwR
