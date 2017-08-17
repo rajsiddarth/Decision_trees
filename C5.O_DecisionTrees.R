@@ -5,7 +5,7 @@ rm(list=ls(all=TRUE))
 #install.packages("RCurl")
 library(RCurl)
 
-univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth119/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
+univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
                 col.names = c('ID', 'age', 'exp', 'inc', 
                               'zip', 'family', 'ccavg', 'edu', 
                               'mortgage', 'loan', 'securities', 
