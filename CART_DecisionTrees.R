@@ -1,10 +1,6 @@
 # Setting the working directory
 rm(list=ls(all=TRUE))
 
-par(mfrow=c(1,1))
-
-
-#setwd("")
 #install.packages("RCurl")
 library(RCurl)
 univ=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth/Datasets/master/Bank_dataset.csv"), header=T, sep=',',
@@ -54,7 +50,7 @@ predCartTest=predict(dtCart, newdata=test, type="vector")
 predCartEval=predict(dtCart, newdata=eval, type="vector")
 install.packages("DMwR")
 
-#library(DMwR)
+library(DMwR)
 regr.eval(train[,"inc"], predCartTrain, train.y = train[,"inc"])
 regr.eval(test[,"inc"], predCartTest, train.y = train[,"inc"])
 regr.eval(eval[,"inc"], predCartEval, train.y = train[,"inc"])
