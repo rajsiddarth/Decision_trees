@@ -1,6 +1,6 @@
 # Decision trees in R
 
-## Algorithm used
+## Techniques used
 
 - C5.0 and 
 - CART packages in R
