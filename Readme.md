@@ -10,11 +10,11 @@ The Bank data set used contains 12 features, 5000 samples with Personal loan as 
 
 The independent features are
 
-ID: Customer ID
+1. ID: Customer ID
 
-Age: Customer Age
+- Age: Customer Age
 
-Experience: #years of Professional experience
+- Experience: #years of Professional experience
 
 Income: Annual Income of the customer in $000
 
